@@ -9,10 +9,12 @@
 .clients-item {
   width: 170px;
   height: 92px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.clients-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .clients-link {
   width: 100%;
   height: 100%;
@@ -23,17 +25,20 @@
   border-radius: 4px;
 
   transition: 250ms border var(--transition);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--accent-color);
-}
+
 .clients-icon {
   fill: var(--icon-fill);
 
   transition: fill 250ms var(--transition);
-}
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
+
+  .clients-link:hover &,
+  .clients-link:focus & {
+    fill: var(--accent-color);
+  }
 }
