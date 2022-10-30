@@ -245,6 +245,16 @@ body {
   background-color: #ffffff;
   margin-right: 8.4px;
 }
+.modal-input-checkbox:focus + .modal-checkbox-label::before {
+  border: 2px solid var(--accent-color);
+}
+.modal-input-checkbox:checked + .modal-checkbox-label::before {
+  background-color: var(--accent-color);
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border: 2px solid var(--accent-color);
+}
 
 .modal-checkbox-label-link {
   color: var(--accent-color);
@@ -254,18 +264,6 @@ body {
 .modal-input-checkbox {
   top: 79%;
   left: 43px;
-}
-
-.modal-input-checkbox:checked + .modal-checkbox-label::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/check.svg);
-  background-size: contain;
-  background-origin: border-box;
-  border: 2px solid var(--accent-color);
-}
-
-.modal-input-checkbox:focus + .modal-checkbox-label::before {
-  border: 2px solid var(--accent-color);
 }
 
 .modal-form-btn {
