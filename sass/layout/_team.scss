@@ -1,21 +1,21 @@
-.team-section {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 /* вариант #1 */
-/* .team-list {
+/* .team__list {
   display: flex;
   justify-content: space-between;
 } */
 
 /* вариант #2 */
-.team-list {
+.team__list {
   display: flex;
   margin-top: -30px;
   margin-left: -30px;
 }
-.team-item {
+.team__item {
   background-color: var(--accent-color3);
   margin-top: 30px;
   margin-left: 30px;
@@ -32,7 +32,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-card-title {
+.team-card__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -41,7 +41,7 @@
   color: var(--accent-text-color);
   margin-bottom: 10px;
 }
-.team-card-desc {
+.team-card__desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -49,15 +49,15 @@
   letter-spacing: 0.03em;
   color: var(--accent-color2);
 }
-.team-social-list {
+.team-social {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.team-social-item:not(:last-child) {
+.team-social__tem:not(:last-child) {
   margin-right: 10px;
 }
-.team-social-link {
+.team-social__link {
   margin-top: 16px;
   display: flex;
   align-items: center;
@@ -76,13 +76,13 @@
   }
 }
 
-.team-social-icon {
+.team-social__icon {
   fill: var(--icon-fill);
 
   transition: fill 250ms var(--transition);
 
-  .team-social-link:hover &,
-  .team-social-link:focus & {
+  .team-social__link:hover &,
+  .team-social__link:focus & {
     fill: var(--accent-color3);
   }
 }

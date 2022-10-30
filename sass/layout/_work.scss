@@ -1,12 +1,12 @@
-.work-section {
+.work {
   padding-bottom: 94px;
   background-color: var(--accent-color3);
 }
-.work-list {
+.work__list {
   display: flex;
   justify-content: space-between;
 }
-.work-item {
+.work__item {
   position: relative;
 }
 
@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.work-wrapper-title {
+.work-wrapper__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

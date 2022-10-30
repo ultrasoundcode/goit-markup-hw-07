@@ -41,7 +41,7 @@
   display: flex;
   flex-direction: column;
 }
-.modal-form-title {
+.modal-form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -62,7 +62,7 @@
     border-color: var(--accent-color);
   }
 }
-.modal-form-label {
+.modal-form__label {
   margin-bottom: 10px;
 }
 .madal-form-label-desc {

@@ -1,12 +1,12 @@
-.features-section {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--accent-color3);
 }
-.features-list {
+.features__list {
   display: flex;
 }
-.features-item {
+.features__item {
   flex-basis: calc((100% - 90px) / 4);
 
   &:not(:last-child) {
@@ -14,7 +14,7 @@
   }
 }
 
-.features-item-icon-container {
+.features-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
   border-radius: 4px;
 }
 
-.features-title {
+.features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -34,7 +34,7 @@
   color: var(--accent-text-color);
   margin-bottom: 10px;
 }
-.features-desc {
+.features__desc {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
