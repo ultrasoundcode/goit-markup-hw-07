@@ -11,7 +11,7 @@
   border-radius: 4px;
   padding: 40px;
 }
-.modal-close-btn {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -26,12 +26,12 @@
   cursor: pointer;
   padding: 0;
 }
-.modal-close-btn-icon {
+.modal__close-icon {
   fill: #000000;
   transition: fill 250ms var(--transition);
 
-  .modal-close-btn:hover &,
-  .modal-close-btn:focus & {
+  .modal__close:hover &,
+  .modal__close:focus & {
     fill: var(--accent-color);
   }
 }
@@ -49,7 +49,7 @@
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
 }
-.modal-form-input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -65,7 +65,7 @@
 .modal-form__label {
   margin-bottom: 10px;
 }
-.madal-form-label-desc {
+.madal-form__label_desc {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -73,23 +73,23 @@
   color: #757575;
 }
 
-.icon-modal-form {
+.madal-form__icon {
   top: 50%;
   left: 12px;
   position: absolute;
   transform: translateY(-50%);
   transition: fill 250ms var(--transition);
 
-  .modal-form-input:focus + & {
+  .modal-form__input:focus + & {
     fill: var(--accent-color);
   }
 }
-.modal-form-input-wrap {
+.modal-form__input_wrap {
   position: relative;
   margin-top: 4px;
 }
 
-.modal-form-textarea {
+.modal-form__textarea {
   margin-top: 4px;
   padding: 12px 16px;
   resize: none;
@@ -113,7 +113,7 @@
   }
 }
 
-.modal-checkbox-label {
+.modal__checkbox_label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,11 +133,11 @@
     background-color: #ffffff;
     margin-right: 8.4px;
 
-    .modal-input-checkbox:focus + & {
+    .modal__checkbox:focus + & {
       border: 2px solid var(--accent-color);
     }
 
-    .modal-input-checkbox:checked + & {
+    .modal__checkbox:checked + & {
       background-color: var(--accent-color);
       background-image: url(../images/check.svg);
       background-size: contain;
@@ -147,17 +147,17 @@
   }
 }
 
-.modal-checkbox-label-link {
+.modal__checkbox_link {
   color: var(--accent-color);
   font-size: inherit;
 }
 
-.modal-input-checkbox {
+.modal__checkbox {
   top: 79%;
   left: 43px;
 }
 
-.modal-form-btn {
+.modal-form__btn {
   min-width: 200px;
   height: 50px;
   background-color: var(--accent-color);

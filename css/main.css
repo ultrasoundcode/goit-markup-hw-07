@@ -122,7 +122,7 @@ body {
   padding: 40px;
 }
 
-.modal-close-btn {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -138,11 +138,11 @@ body {
   padding: 0;
 }
 
-.modal-close-btn-icon {
+.modal__close-icon {
   fill: #000000;
   transition: fill 250ms var(--transition);
 }
-.modal-close-btn:hover .modal-close-btn-icon, .modal-close-btn:focus .modal-close-btn-icon {
+.modal__close:hover .modal__close-icon, .modal__close:focus .modal__close-icon {
   fill: var(--accent-color);
 }
 
@@ -161,7 +161,7 @@ body {
   color: var(--accent-text-color);
 }
 
-.modal-form-input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -169,7 +169,7 @@ body {
   padding-left: 42px;
   transition: border-color 250ms var(--transition);
 }
-.modal-form-input:focus {
+.modal-form__input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -178,7 +178,7 @@ body {
   margin-bottom: 10px;
 }
 
-.madal-form-label-desc {
+.madal-form__label_desc {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -186,23 +186,23 @@ body {
   color: #757575;
 }
 
-.icon-modal-form {
+.madal-form__icon {
   top: 50%;
   left: 12px;
   position: absolute;
   transform: translateY(-50%);
   transition: fill 250ms var(--transition);
 }
-.modal-form-input:focus + .icon-modal-form {
+.modal-form__input:focus + .madal-form__icon {
   fill: var(--accent-color);
 }
 
-.modal-form-input-wrap {
+.modal-form__input_wrap {
   position: relative;
   margin-top: 4px;
 }
 
-.modal-form-textarea {
+.modal-form__textarea {
   margin-top: 4px;
   padding: 12px 16px;
   resize: none;
@@ -213,11 +213,11 @@ body {
   border-radius: 4px;
   transition: border-color 250ms var(--transition);
 }
-.modal-form-textarea:focus {
+.modal-form__textarea:focus {
   outline: none;
   border-color: var(--accent-color);
 }
-.modal-form-textarea::placeholder {
+.modal-form__textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.67;
@@ -225,7 +225,7 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-checkbox-label {
+.modal__checkbox_label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,7 +234,7 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
-.modal-checkbox-label::before {
+.modal__checkbox_label::before {
   content: "";
   cursor: pointer;
   display: block;
@@ -245,10 +245,10 @@ body {
   background-color: #ffffff;
   margin-right: 8.4px;
 }
-.modal-input-checkbox:focus + .modal-checkbox-label::before {
+.modal__checkbox:focus + .modal__checkbox_label::before {
   border: 2px solid var(--accent-color);
 }
-.modal-input-checkbox:checked + .modal-checkbox-label::before {
+.modal__checkbox:checked + .modal__checkbox_label::before {
   background-color: var(--accent-color);
   background-image: url(../images/check.svg);
   background-size: contain;
@@ -256,17 +256,17 @@ body {
   border: 2px solid var(--accent-color);
 }
 
-.modal-checkbox-label-link {
+.modal__checkbox_link {
   color: var(--accent-color);
   font-size: inherit;
 }
 
-.modal-input-checkbox {
+.modal__checkbox {
   top: 79%;
   left: 43px;
 }
 
-.modal-form-btn {
+.modal-form__btn {
   min-width: 200px;
   height: 50px;
   background-color: var(--accent-color);
@@ -284,7 +284,7 @@ body {
   color: var(--accent-color3);
   cursor: pointer;
 }
-.modal-form-btn:hover, .modal-form-btn:focus {
+.modal-form__btn:hover, .modal-form__btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -594,7 +594,7 @@ body {
   align-items: center;
 }
 
-.team-social__tem:not(:last-child) {
+.team-social__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -685,7 +685,7 @@ body {
   font-style: inherit;
 }
 
-.footer-contact-address {
+.footer-contacts__address {
   font-style: inherit;
   font-size: 14px;
   line-height: 1.7;
@@ -693,11 +693,11 @@ body {
   color: var(--accent-color3);
   transition: color 250ms var(--transition);
 }
-.footer-contact-address:hover, .footer-contact-address:focus {
+.footer-contacts__address:hover, .footer-contacts__address:focus {
   color: var(--accent-color);
 }
 
-.footer-contact__mail {
+.footer-contacts__mail {
   font-style: inherit;
   font-size: 14px;
   line-height: 1.7;
@@ -705,11 +705,11 @@ body {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--transition);
 }
-.footer-contact__mail:hover, .footer-contact__mail:focus {
+.footer-contacts__mail:hover, .footer-contacts__mail:focus {
   color: var(--accent-color);
 }
 
-.footer-contact__tel {
+.footer-contacts__tel {
   font-style: inherit;
   font-size: 14px;
   line-height: 1.7;
@@ -717,7 +717,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--transition);
 }
-.footer-contact__tel:hover, .footer-contact__tel:focus {
+.footer-contacts__tel:hover, .footer-contacts__tel:focus {
   color: var(--accent-color);
 }
 
@@ -833,22 +833,22 @@ body {
   margin-left: 10px;
 }
 
-.portfolio-section {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.portfolio-filters-list {
+.portfolio-filters {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio-filters-item:not(:last-child) {
+.portfolio-filters__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-filters-btn {
+.portfolio-filters__btn {
   cursor: pointer;
   font-family: var(--main-font);
   font-weight: 500;
@@ -863,50 +863,50 @@ body {
   padding: 6px 22px;
   transition: background-color 250ms var(--transition), box-shadow 250ms var(--transition);
 }
-.portfolio-filters-btn:hover, .portfolio-filters-btn:focus {
+.portfolio-filters__btn:hover, .portfolio-filters__btn:focus {
   background-color: var(--accent-color);
   color: var(--accent-color3);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-/* portfolio-prj-list */
+/* portfolio-prj */
 /* вариант #1 */
-/* .portfolio-prj-list {
+/* .portfolio-prj {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
   margin-right: -15px;
 }
-.portfolio-prj-item {
+.portfolio-prj__item {
   margin: 15px;
 } */
 /* вариант #2  */
-/* .portfolio-prj-list {
+/* .portfolio-prj {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
-.portfolio-prj-item {
+.portfolio-prj__item {
   margin-left: 30px;
   margin-top: 30px;
 } */
 /* вариант #3 */
-.portfolio-prj-list {
+.portfolio-prj {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.portfolio-prj-item {
+.portfolio-prj__item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.portfolio-prj-card {
+.portfolio-prj__card {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
@@ -916,7 +916,7 @@ body {
   border-bottom: 1px solid #eeeeee;
 }
 
-.portfolio-prj-title {
+.portfolio-prj__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -925,7 +925,7 @@ body {
   margin-bottom: 4px;
 }
 
-.portfolio-prj-desc {
+.portfolio-prj__desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -933,23 +933,23 @@ body {
   color: var(--accent-color2);
 }
 
-.portfolio-prj-link {
+.portfolio-prj__link {
   display: block;
   text-decoration: none;
   transition: 250ms box-shadow var(--transition);
 }
-.portfolio-prj-link:hover, .portfolio-prj-link:focus {
+.portfolio-prj__link:hover, .portfolio-prj__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-prj-img-container {
+.portfolio-prj__img {
   position: relative;
   max-width: 370px;
   max-height: 294px;
   overflow: hidden;
 }
 
-.portfolio-prj-overlay {
+.portfolio-prj__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -960,12 +960,12 @@ body {
   opacity: 0;
   transition: transform 250ms var(--transition), opacity 250ms var(--transition);
 }
-.portfolio-prj-link:hover .portfolio-prj-overlay {
+.portfolio-prj__link:hover .portfolio-prj__overlay {
   opacity: 1;
   transform: translate(0, 0);
 }
 
-.portfolio-prj-overlay-desc {
+.portfolio-prj__overlay-desc {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
